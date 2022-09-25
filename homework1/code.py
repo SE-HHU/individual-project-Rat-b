@@ -43,8 +43,8 @@ except File:
     print("数据写入错误")
 for i in range(len(vis)):
     try:
-        f1.write(str(i)+'. '+vis[i]+"\n")
-        f2.write(str(i)+'. '+str(answer[i])+"\n")
+        f1.write(str(i+1)+'. '+vis[i]+"\n")
+        f2.write(str(i+1)+'. '+str(answer[i])+"\n")
     except File:
         print("数据写入错误！")
 
