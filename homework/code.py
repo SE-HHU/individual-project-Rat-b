@@ -3,9 +3,9 @@ from tkinter import W
 
 
 operator = ['+','-']
-vis = []
-answer = []
-n = int(input("你想生成的题目数量："))
+vis = []#一个储存已经生成的题目的列表
+answer = []#储存答案的列表
+n = int(input("你想生成的题目数量："))#根据需要生成题目数量
 while len(vis) != n:
     quantity = random.randint(2,3)
     if quantity ==2:
